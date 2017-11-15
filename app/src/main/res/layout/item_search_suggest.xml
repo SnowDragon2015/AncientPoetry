@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/id_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="诗文"
+            android:textSize="@dimen/default_big_text_size" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light" />
+
+        <com.ant.poy.widget.MeasureHeightListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@color/white"
+            android:dividerHeight="0px" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_item"
+        android:background="@color/gray_light" />
+
+
+</LinearLayout>

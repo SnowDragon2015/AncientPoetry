@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0"/>
+            <enum name="trimModeLength" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

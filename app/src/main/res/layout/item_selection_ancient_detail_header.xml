@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:background="@color/common_bg_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_15">
+
+
+        <TextView
+            android:id="@+id/author_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/img_head"
+            android:text="李白"
+            android:textColor="@color/blue_steel"
+            android:textSize="@dimen/default_bit_text_size_20" />
+
+
+        <TextView
+            android:id="@+id/author_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_big_text_size"
+            tools:text="李白，字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”，有《李太白赶集》" />
+
+        <include layout="@layout/common_content_bootom_like" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AD9D7E</color>
+    <!--状态栏的颜色-->
+    <color name="colorPrimaryDark">#AD9D7E</color>
+    <!--控件的选中颜色，即checked或selected状态的颜色。-->
+    <color name="colorAccent">#AD9D7E</color>
+
+    <color name="accent">#FF4081</color>
+
+    <color name="common_bg">#F5F5F5</color>
+    <color name="common_bg_content">#FFFFFF</color>
+    <color name="common_bg_title_bar">#FFFFFF</color>
+    <color name="common_bg_tab_select">#AD9D7E</color>
+
+    <!--通用触摸背景色-->
+    <color name="common_touch_bg">#E3E3E3</color>
+    <!--通用背景色-->
+    <color name="common_gray_bg">#EEEEEE</color>
+
+    <!--通用一级标题的颜色-->
+    <color name="common_h1">#333333</color>
+    <!--通用二级标题的颜色-->
+    <color name="common_h2">#333333</color>
+    <!--通用三级标题的颜色-->
+    <color name="common_h3">#333333</color>
+
+
+    <!--通用分割线细-->
+    <color name="common_divider_narrow">#E5E5E5</color>
+    <!--通用分割线粗-->
+    <color name="common_divider_wide">@color/white</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="blue_steel">#52799F</color>
+    <color name="blue_light_sky">#87CEFA</color>
+
+    <color name="black">#333333</color>
+    <color name="black_A">#333333</color>
+    <color name="black_alpha_45">#71000000</color>
+
+    <color name="gray">#B8B8B8</color>
+
+    <!--浅灰-->
+    <color name="gray_light">#E5E5E5</color>
+    <color name="gray_light_AE">#AEAEAE</color>
+    <color name="gray_dark">#A9A9A9</color>
+
+    <color name="green_AD">#AD9D7E</color>
+    <!--标签选中颜色-->
+    <color name="tag_selected_color">#923d3a</color>
+    <color name="select_bg_color_my">#e8e2d6</color>
+   <!-- <color name="green_a">#923d3a</color>-->
+    <!---->
+
+
+    <!-- my背景色-->
+    <color name="my_bg">#FFFFFF</color>
+
+
+
+
+
+</resources>

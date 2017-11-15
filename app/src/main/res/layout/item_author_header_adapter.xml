@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selected_term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="不限"
+            android:textColor="@color/black_A"
+            android:textSize="@dimen/default_bit_text_size_20" />
+
+        <include
+            layout="@layout/common_line_solid"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <com.ant.poy.widget.TagFlowPopupRelativeLayout
+            android:id="@+id/tag_fp_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@color/common_bg_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"/>
+
+        <include layout="@layout/common_line_solid" />
+
+
+
+
+</LinearLayout>

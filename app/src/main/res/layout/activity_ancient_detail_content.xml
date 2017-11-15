@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <include layout="@layout/common_line_solid" />
+
+    <com.ant.poy.widget.CustomEmptyView
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:id="@+id/scroll_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/common_bg_content"
+            android:paddingBottom="@dimen/padding_5"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10">
+
+                <LinearLayout
+                    android:id="@+id/temp_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nameStr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/blue_steel"
+                        android:textSize="@dimen/default_bit_text_size_20"
+                        android:textStyle="bold"
+                        tools:text="水调歌头,明月几时有" />
+
+                    <CheckBox
+                        android:id="@+id/translate"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:background="@drawable/check_bg_yi"
+                        android:button="@null"
+                        android:textSize="@dimen/default_medium_text_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/zuozhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_title"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:text="作者："
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/default_medium_text_size" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_title"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_toRightOf="@id/zuozhe"
+                    android:text="周公旦"
+                    android:textColor="@color/blue_steel"
+                    android:textSize="@dimen/default_medium_text_size" />
+
+                <TextView
+                    android:id="@+id/cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/author"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:background="@color/common_bg_content"
+                    android:textColor="@color/black"
+                    android:text="子曰：学而时习之，不亦说乎 "
+                    android:textSize="@dimen/default_big_text_size" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/scroll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_divider_narrow"
+                android:orientation="vertical"/>
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/common_bg_content"
+                android:paddingTop="@dimen/padding_5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_10"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_15">
+
+                    <TextView
+                        android:id="@+id/author_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="译文"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_bit_text_size_20" />
+
+                    <TextView
+                        android:id="@+id/translate_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_big_text_size"
+                        tools:text="李白，字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”，有《李太白赶集》" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:visibility="gone">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

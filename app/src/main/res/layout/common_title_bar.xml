@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/common_bg_tab_select"
+    android:layout_height="@dimen/action_bar_default_height">
+    <ImageView
+        android:id="@+id/title_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fanhui_white"/>
+    <TextView
+        android:id="@+id/title_bar_name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:text="@string/title_my"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/default_big_large_text_size"
+        android:textColor="@color/white"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_fanhui"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="来降低来降低覅领双蛋节覅德鲁克说家地方了多久复利奇偶的加分了
+        看的加分ID李会计哦锻炼腹肌 蓝色的覅登录事件覅蝶恋蜂狂近代史法律
+        手段科技飞碟说就风口浪尖时间打开了福建师范顺口溜复健科了到付件儿科了第六空间发iOS单利法科技打扫房间考拉弟弟多多多多多多
+        多多多多多多多多多多多多多多多多多多多多多多多多多多多"
+        android:textSize="@dimen/default_big_large_text_size" />
+    <TextView
+        android:id="@+id/look_more_false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abc"
+        android:paddingTop="@dimen/padding_3"
+        android:paddingBottom="@dimen/padding_3"
+        android:background="@color/common_bg_content"
+        android:gravity="center_horizontal|bottom"
+        android:text="查看更多"
+        android:textColor="@color/blue_steel"
+        android:textSize="@dimen/default_medium_text_size"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/look_more_false"
+        android:background="@drawable/shape_look_more"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_medium_text_size" />
+
+    <TextView
+        android:id="@+id/look_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abc"
+        android:paddingTop="@dimen/padding_3"
+        android:paddingBottom="@dimen/padding_3"
+        android:background="@color/common_bg_content"
+        android:gravity="center_horizontal|bottom"
+        android:text="查看更多"
+        android:textColor="@color/blue_steel"
+        android:textSize="@dimen/default_medium_text_size" />
+
+
+</RelativeLayout>

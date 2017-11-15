@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox android:id="@+id/tv_tags"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="打工之家"
+    android:paddingTop="@dimen/margin_10"
+    android:paddingBottom="@dimen/margin_10"
+    android:paddingLeft="@dimen/margin_15"
+    android:paddingRight="@dimen/margin_15"
+    android:button="@null"
+    android:textColor="@drawable/tags_flow_text_color"
+    android:textSize="@dimen/default_medium_big_text_size" />

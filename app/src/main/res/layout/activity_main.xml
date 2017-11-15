@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/common_bg"
+    tools:context=".ui.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_15"
+        android:background="@color/common_bg_tab_select"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+       >
+        <ImageView
+            android:id="@+id/click_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@mipmap/icon_my"/>
+        <TextView
+            android:id="@+id/click_search"
+            android:background="@drawable/edit_bg_round_boder"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="@string/search_hint"
+            android:textSize="@dimen/default_medium_text_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_light_AE"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:padding="@dimen/padding_5"/>
+        <ImageView
+            android:id="@+id/click_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:padding="@dimen/padding_10"
+            android:visibility="gone"
+            android:src="@mipmap/rush_more"
+            />
+
+    </LinearLayout>
+    <!--app:tl_indicator_width_equal_title="false"
+          app:tl_textAllCaps="true"-->
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/sld_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:tl_textsize="@dimen/default_medium_text_size"
+        android:background="@color/common_bg_tab_select"
+        app:tl_tab_space_equal="true"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_textSelectColor="@color/white"
+        app:tl_textUnselectColor="@color/white"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_bottom="@dimen/margin_5"
+        app:tl_indicator_color="@color/white"
+       />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

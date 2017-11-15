@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/common_bg_content"
+    android:paddingTop="@dimen/padding_15"
+    android:paddingBottom="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingLeft="@dimen/padding_10"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/id_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_zuozhe"/>
+        <TextView
+            android:id="@+id/author_name_tv"
+            android:text="李白"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:textColor="@color/blue_steel"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/default_bit_text_size_20"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/author_brief"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/default_big_text_size"
+        android:textColor="@color/black"
+        tools:text="李白，字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”，有《李太白赶集》"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/common_content_bootom_like"/>
+
+
+
+</LinearLayout>

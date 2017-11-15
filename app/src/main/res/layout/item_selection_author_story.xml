@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10">
+
+    <TextView
+        android:id="@+id/nameStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_bit_text_size_20"
+        android:textStyle="bold"
+        tools:text="水调歌头,明月几时有" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/default_big_text_size"
+            android:visibility="visible"
+            tools:text="朝露昙花 咫尺天涯
+人道是黄河十曲
+毕竟东流去
+八千年玉老 一夜枯萎
+问苍天此生何必
+昨夜风吹处 落英听谁细数
+九万里苍穹 御风弄影 谁人与共
+千秋北斗 瑶池寒苦 不若神仙眷侣 百年江湖" />
+
+        <TextView
+            android:id="@+id/id_assist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cont"
+            android:background="@color/common_bg_content"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/padding_3"
+            android:paddingTop="@dimen/padding_3"
+            android:text="查看更多"
+            android:textColor="@color/blue_steel"
+            android:textSize="@dimen/default_medium_text_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/shape"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@id/id_assist"
+            android:background="@drawable/shape_look_more"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_medium_text_size" />
+
+        <TextView
+            android:id="@+id/look_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cont"
+            android:background="@color/common_bg_content"
+            android:gravity="right|bottom|center_vertical"
+            android:paddingBottom="@dimen/padding_3"
+            android:text="查看更多"
+            android:drawableRight="@drawable/icon_view_more"
+            android:textColor="@color/blue_steel"
+            android:textSize="@dimen/default_medium_text_size" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

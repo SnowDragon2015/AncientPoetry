@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingTop="@dimen/padding_15"
+    android:paddingBottom="@dimen/padding_15">
+
+    <TextView
+        android:id="@+id/guwen_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="资治通鉴•宋纪•宋纪三十六计"
+        android:textColor="@color/blue_steel"
+        android:textSize="@dimen/default_big_large_text_size" />
+
+    <TextView
+        android:id="@+id/guwen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guwen_title_name"
+        android:layout_marginTop="@dimen/margin_15"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_big_text_size"
+        tools:text="天行健，君子以自强不息，地势坤，君子以好的再无,别人笑我太疯癫，我先他人 看不穿，不见五陵好节目，无花无酒锄作田，酒醒只在花前坐，酒醉还在花下眠，年年岁岁花相似，岁岁年年花不同，但愿老死花酒间，不愿躬身车马前。" />
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_bottom_like"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/padding_15"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@null"
+        android:background="@drawable/check_bg_shouchang" />
+
+    <CheckBox
+        android:id="@+id/copy"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/like"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_toRightOf="@id/like"
+        android:background="@mipmap/icon_copy"
+        android:button="@null"/>
+    <TextView
+        android:id="@+id/praise"
+        tools:text="15"
+        android:gravity="center"
+        android:textSize="@dimen/default_small_text_size"
+        android:textColor="@color/gray_light_AE"
+        android:layout_alignParentRight="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@null"
+        android:drawableRight="@mipmap/icon_zan"/>
+
+
+</RelativeLayout>

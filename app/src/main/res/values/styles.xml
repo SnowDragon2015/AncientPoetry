@@ -1,0 +1,92 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <!--标题栏的颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏的颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--控件的选中颜色，即checked或selected状态的颜色。-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.ToolBar.Menu" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- 设置-弹窗的背景-颜色-->
+        <item name="android:colorBackground">@color/common_bg</item>
+        <!-- 字体的颜色-->
+        <item name="android:textColor">@color/common_h1</item>
+        <!-- 字体大小-->
+        <item name="android:textSize">16sp</item>
+        <!-- 用于替换菜单的三个小白点，换成自已的图片-->
+        <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.Menu</item>
+        <!--用于控制menu弹出的位置，位于toolbar的下面，而不是上面-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!-- 用于修改item默认的分割线-->
+        <item name="android:dropDownListViewStyle">@style/dropDownStyle</item>
+        <item name="dropDownListViewStyle">@style/dropDownStyle</item>
+    </style>
+
+    <style name="ActionButton.Overflow.Menu" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/abc_ic_search_api_mtrl_alpha</item>
+    </style>
+
+    <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <!--用于修改popmenu的分割线-->
+    <style name="dropDownStyle" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/touch_bg</item>
+        <item name="android:divider">@color/common_divider_narrow</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+    <!--自定义复制粘贴-->
+    <style name="OperateTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--Activity 切换动画-->
+    <style name="AnimationActivity" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_fade_out</item>
+
+    </style>
+
+    <!-- popupwindow SearchView 动画 -->
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_search_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_search_exit_anim</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+
+
+</resources>

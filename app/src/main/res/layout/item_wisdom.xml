@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wisdom_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wisdom_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_select"
+        android:padding="@dimen/margin_10"
+        android:text="别人笑我太疯癫，我笑他人看不穿"
+        android:textSize="@dimen/default_big_text_size" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <include layout="@layout/common_line_stroke" />
+
+
+</LinearLayout>

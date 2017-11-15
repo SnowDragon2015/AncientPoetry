@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_default_height"
+        android:background="@color/common_bg_title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <ImageButton
+            android:id="@+id/pop_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/action_button_back_pressed_light"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pop_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/white"
+            android:focusable="true"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/pop_search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/id_content"
+        android:layout_below="@+id/id_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sld_tab_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_default_height"
+            android:background="@color/common_bg_tab_select"
+            app:tl_indicator_color="#5d6146"
+
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/white"
+            app:tl_textUnselectColor="@color/common_divider_narrow" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewPage"
+            android:layout_below="@id/sld_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:layout_height="match_parent" />
+        <!--<include layout="@layout/common_bottom_page"/>-->
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycle_view"
+        android:layout_below="@+id/id_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

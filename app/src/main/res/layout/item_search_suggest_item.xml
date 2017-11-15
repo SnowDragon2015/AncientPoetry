@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/search_suggest_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding_7"
+        android:textColor="@color/black"
+        android:text="别人笑我太疯癫，我笑他人看不穿"
+        android:textSize="@dimen/default_big_text_size" />
+
+    <include layout="@layout/common_line_stroke" />
+
+
+</LinearLayout>

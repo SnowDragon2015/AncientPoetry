@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="action_bar_default_height">48dp</dimen>
+    <dimen name="title_bar_default_height">45dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+
+
+
+    <!--common text size-->
+    <dimen name="default_hint_size">18dp</dimen>
+
+    <dimen name="default_tiny_text_size">12sp</dimen>
+    <dimen name="default_small_text_size">14sp</dimen>
+    <dimen name="default_medium_text_size">16sp</dimen>
+    <dimen name="default_medium_big_text_size">17sp</dimen>
+    <dimen name="default_big_text_size">18sp</dimen>
+    <dimen name="default_bit_text_size_20">20sp</dimen>
+    <dimen name="default_big_large_text_size">22sp</dimen>
+
+</resources>

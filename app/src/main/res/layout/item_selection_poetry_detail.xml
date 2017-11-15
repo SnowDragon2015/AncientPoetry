@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10">
+    <TextView
+        android:id="@+id/nameStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_bit_text_size_20"
+        android:textStyle="bold"
+        tools:text="水调歌头,明月几时有" />
+
+    <com.ant.poy.widget.ReadMoreTextView
+        android:id="@+id/cont111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:visibility="gone"
+        app:trimLines="12"
+        app:trimMode="trimModeLine"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/default_medium_text_size"
+        tools:text="别人笑我太疯癫，我笑他人看不穿，不见五陵豪杰墓，无花无酒锄作田。" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:visibility="visible"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/default_big_text_size"
+            android:text="来降低来降低覅领双蛋节覅德鲁克说家地方了多久复利奇偶的加分了
+        看的加分ID李会计哦锻炼腹肌 蓝色的覅登录事件覅蝶恋蜂狂近代史法律
+        手段科技飞碟说就风口浪尖时间打开了福建师范顺口溜复健科了到付件儿科了第六空间发iOS单利法科技打扫房间考拉弟弟多多多多多多
+        多多多多多多多多多多多多多多多多多多多多多33333"
+            />
+        <TextView
+            android:id="@+id/id_assist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cont"
+            android:paddingTop="@dimen/padding_3"
+            android:paddingBottom="@dimen/padding_3"
+            android:background="@color/common_bg_content"
+            android:gravity="center_horizontal|bottom"
+            android:text="查看更多"
+            android:textColor="@color/blue_steel"
+            android:textSize="@dimen/default_medium_text_size"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/shape"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@id/id_assist"
+            android:background="@drawable/shape_look_more"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_medium_text_size" />
+
+        <TextView
+            android:id="@+id/look_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cont"
+            android:paddingBottom="@dimen/padding_3"
+            android:background="@color/common_bg_content"
+            android:gravity="right|bottom|center_vertical"
+            android:drawableRight="@drawable/icon_view_more"
+            android:text="查看更多"
+            android:textColor="@color/blue_steel"
+            android:textSize="@dimen/default_medium_text_size" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

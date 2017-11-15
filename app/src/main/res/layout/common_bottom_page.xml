@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_light"
+    android:id="@+id/page_layout"
+    android:paddingTop="@dimen/padding_10"
+    android:paddingBottom="@dimen/padding_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/page_up"
+        android:text="上一页"
+        android:textSize="@dimen/default_medium_text_size"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/page_num"
+        android:text="第2/7页"
+        android:textSize="@dimen/default_medium_text_size"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/page_next"
+        android:text="下一页"
+        android:textSize="@dimen/default_medium_text_size"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
